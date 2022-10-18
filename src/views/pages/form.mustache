@@ -1,0 +1,45 @@
+{{>partials/header}}
+
+<h1> Formulario </h1>
+
+    <form method="get">
+        
+        <input type="text" name="nome" placeholder="Digite o seu nome"/><br/>
+        
+        <input type="number" name="idade" placeholder="Digite a sua idade"/><br/>
+        
+        <input type="number" name="telefone" placeholder="Digite o seu telefone"/><br/>
+        
+        <input type="text" name="endereco" placeholder="Digite o seu endereço"/><br/>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+
+    {{#nome}}
+
+     Olá {{nome}}
+     
+    {{/nome}}
+
+    {{#idade}}
+    você tem {{idade}}
+    {{/idade}}
+
+    {{#telefone}}
+    O seu telefone é {{telefone}}
+    {{/telefone}}
+
+    {{#endereco}}
+    E seu endereço é {{endereco}}
+    {{/endereco}}
+
+
+
+
+
+
+
+
+
+
+{{>partials/footer}}

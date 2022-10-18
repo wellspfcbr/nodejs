@@ -1,0 +1,17 @@
+{{>partials/header}}
+
+    
+   <form method="POST" action="login-usuario">
+    <input type="email" name="email" placeholder="Digite um endereço de e-mail valído"/><br>
+    <input type="password" name="Senha" placeholder="Digite a senha"/>
+    <input type="submit" name="Enviar"/>
+   </form>
+
+   {{#mostrarIdade}}
+
+        Você tem {{idade}} anos
+
+   {{/mostrarIdade}}
+
+
+{{>partials/footer}}
